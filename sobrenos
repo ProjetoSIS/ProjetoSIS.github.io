@@ -1,0 +1,341 @@
+<html>
+
+ <head>
+
+<title>SIS</title>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">﻿
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="stylesheet" type="text/css/" href"css/fontawesome-all.css">
+<link rel="stylesheet" type="text/css/" href"css/style.css">
+   
+	<style>
+/*RESET---------------------------------------------------------*/
+*,*:before,*:after{margin: 0; padding: 0; box-sizing: border-box; -webkit-box-sizing: border-box;}
+body{font-family: 'Open Sans', sans-serif; font-size: inherit;}
+
+input, select, iframe, button{border: none; font-family: 'Open Sans', sans-serif; font-size: inherit;}
+h1, h2, h3{margin: 0; padding: 0;}
+ol, ul{list-style: none;}
+a{text-decoration: none; color: inherit;} 
+a:hover{color: inherit;}
+img{max-width: 100%; border: none;} /*ajusta a imagem ao box*/
+
+
+.header{
+position: absolute;
+background: #0B0B3B;
+padding-top: 4px;
+padding-bottom: 4px;
+width: 100%;
+border-bottom: 4px solid grey;
+z-index: 9999;
+margin-top: -30px;
+padding: 9px;}
+
+.header.fixed{
+position: fixed;
+top: 0;
+margin-top: 0px;} 
+
+.título{
+font-size: 30px;
+color: white;
+font-height: bold;
+text-align: center;}
+
+/*----------------------------------------------------------------*/
+
+.header-lista{
+position: absolute;
+display: table;
+background: #0B173B;
+padding: 10px;
+width: 100%;
+border-bottom: 4px solid grey;
+float: left;
+z-index: 9999;
+margin-top: -140px;}
+
+.header-lista .nav{         
+margin-left: 250px;   /*--espaço para a esquerda--*/
+margin-top: 2px;
+margin-bottom: 2px;}
+
+.header-lista .nav ul li{
+display: inline-block;
+margin-left: 70px;}  /*--espaçamento--*/
+
+.header-lista .nav ul li a{
+color: white;}
+
+.header-lista .nav ul li a:hover{
+color: yellow;}
+
+.header-lista.fixed{
+position: fixed;
+top: 0;
+margin-top: 62px;} 
+
+/*----------------------------------------------------------------------*/
+
+.profile{
+padding: 70px 0px;}
+
+.texto1{
+background: rgba(255,255,255, .5);
+width: 50%;
+font-size: 15px;
+padding: 35px;
+border: 2px solid pink;
+border-radius: 10px;
+-webkit-border-radius: 10px;
+float: left;
+height: 25%;}
+
+.texto1 .image{
+overflow: hidden;
+float: left;
+margin-right: 10px;
+width: 83px;
+height: 83px;
+border-radius: 50%;
+-webkit-border-radius: 50%;}
+
+.texto1 p{
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: 83px;}
+
+.texto1 p .name{
+color: tomato;
+font-weight: bold;
+font-size: 20px;}
+
+ .texto1 .texto{
+float: left;
+margin-left: 10px;}
+
+
+
+/*-------------segundo---------------------------------------------*/
+
+.texto2{
+background: rgba(255,255,255, .5);   /*direita*/
+width: 50%;
+font-size: 15px;
+padding: 15px;
+margin-top: 13%;
+border: 2px solid pink;
+border-radius: 10px;
+-webkit-border-radius: 10px;
+float: right;
+height: 25%;}
+
+.texto2 .image{
+overflow: hidden;
+float: right;
+margin-left: 10px;
+width: 83px;
+height: 83px;
+border-radius: 50%;
+-webkit-border-radius: 50%;}
+
+.texto2 p{
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: 83px;
+float: right;
+margin-top: -67px;
+margin-right: 90px;}
+
+.texto2 p .name{
+color: tomato;
+font-weight: bold;
+font-size: 20px;}
+
+.texto2 .texto{
+float: left;
+margin-left: 10px;}
+
+
+/*----------------terceiro-------------------------------------------------------------------*/
+.texto3{
+background: rgba(255,255,255, .5);
+width: 50%;
+font-size: 15px;
+padding: 15px;
+border: 2px solid pink;
+border-radius: 10px;
+-webkit-border-radius: 10px;
+float: left;
+margin-top: 14%;
+height: 25%;}
+
+.texto3 .image{
+overflow: hidden;
+float: left;
+margin-right: 10px;
+width: 83px;
+height: 83px;
+border-radius: 50%;
+-webkit-border-radius: 50%;}
+
+.texto3 p{
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: 83px;
+margin-top: 20px;}
+
+.texto3 p .name{
+color: tomato;
+font-weight: bold;
+font-size: 20px;}
+
+.texto3 .texto{
+float: left;
+margin-left: 10px;}
+
+/*-----------quarto------------------------------------------------------------------------------------------------*/
+
+.texto4{
+background: rgba(255,255,255, .5);   /*direita*/
+width: 50%;
+height: 25%;
+font-size: 15px;
+padding: 15px;
+margin-top: 15%;
+margin-bottom: 5%;
+border: 2px solid pink;
+border-radius: 10px;
+-webkit-border-radius: 10px;
+float: right;}
+
+.texto4 .image{
+overflow: hidden;
+float: right;
+margin-left: 10px;
+width: 83px;
+height: 83px;
+border-radius: 50%;
+-webkit-border-radius: 50%;}
+
+.texto4 p{
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: 83px;
+float: right;
+margin-top: -67px;
+margin-right: 90px;}
+
+.texto4 p .name{
+color: tomato;
+font-weight: bold;
+font-size: 20px;}
+
+.texto4 .texto{
+float: left;
+margin-left: 10px;}
+
+
+.body{
+background-color: #0080FF;}
+
+  </style>
+
+ </head>
+
+ <body class="body">
+
+/*-------título----------------------------------------------*/
+  <header class="header">
+   <p class="título"> Sobre nós </p>
+  </header>
+
+
+  <section class="section">
+   <h1> TESTE </h1>
+  </section>
+
+<!----------------BLOQUINHOS---------------------------------->
+
+  <section class="profile">
+
+ <article class="texto1">
+   <span class="image"><img src="https://imgix.ranker.com/user_node_img/3140/62796275/original/regina-george-film-characters-photo-u1?w=280&h=280&fit=crop&crop=faces&q=50&fmt=jpg" /></span>
+   <p>
+ 
+    <span class="name">Ana Luisa Abreu</span>
+    <span class="texto">Técnica em Eletrônica formada pela Escola Técnica Pandiá Calógeras, na turma de 2016-2018.</span>
+    <span class="texto">Autora da tese científica</span>
+    <span class="texto">Eletricista projetista</span>
+    <span class="texto">Feminista</span>
+
+   </p>
+  </article>
+
+<article class="texto2">
+   <span class="image"><img src="https://i.pinimg.com/originals/6a/de/2d/6ade2d376bfd299371db07070bfb6baa.jpg" /></span>
+   <p>
+    <span class="name">Beatriz Piassi</span>
+    <span class="texto">Técnica em Eletrônica formada pela Escola Técnica Pandiá Calógeras, na turma de 2016-2018.</span>
+    <span class="texto">Programadora mor do projeto</span>
+    <span class="texto">Eletricista projetista</span>
+    <span class="texto">"Eu não uso óculos"</span>
+   </p>
+  </article>
+ </div>
+
+<article class="texto3">
+   <span class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_3i52b_0bVx7zb1bbiiJNGNk7MsKJiClQEknL2JP9Fo8xEMpxiQ" /></span>
+   <p>
+    <span class="name">Helena da Rosa</span>
+    <span class="texto">Técnica em Eletrônica formada pela Escola Técnica Pandiá Calógeras, na turma de 2016-2018.</span>
+    <span class="texto">Autora da tese científica</span>
+    <span class="texto">Eletricista projetista</span>
+    <span class="texto">"Eu sou loira"</span>
+   </p>
+  </article>
+ </div>
+
+<article class="texto4">
+   <span class="image"><img src="https://img.superanimes.site/img/user/perfil/1718758160.jpg" /></span>
+   <p>
+    <span class="name">Thayana Lucero</span>
+    <span class="texto">Técnica em Eletrônica formada pela Escola Técnica Pandiá Calógeras, na turma de 2016-2018.</span>
+    <span class="texto">Líder e programadora do projeto</span>
+    <span class="texto">Eletricista projetista</span>
+    <span class="texto">Gosta de lakorn</span>
+   </p>
+  </article>
+ </div>
+
+  </section>
+
+<!--------menu------------------------------------------------------------>
+ <header class="header-lista">
+  <nav class="nav">
+   <ul>
+     <li><a href="file:///E:/Site/Agora%20vai/Site_inicial.html">Inicial</a></li>
+     <li><a href="file:///E:/Site/Agora%20vai/Site_sobrenós.html">Sobre nós</a></li>
+     <li><a href="file:///E:/Site/Agora%20vai/Site_projeto.html">Sobre o projeto</a></li>
+     <li><a href="file:///E:/Site/Agora%20vai/Site_doacoes.html">Doações</a></li>
+     <li><a href="https://thingspeak.com/">Meu SIS</a></li>  <!--Página inicial do ts-->
+   </ul>
+  </nav>
+ </header>
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="js/SobreNós.js"></script>
+
+ </body>
+
+</html>
