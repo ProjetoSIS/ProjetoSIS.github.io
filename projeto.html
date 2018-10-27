@@ -77,10 +77,54 @@ top: 0;
 margin-top: 0px;} 
 
 
-.article h3{
-margin-top : -1000px;
-font-size: 50px;
-text-align: center;}
+/*-----------------------ARTICLE-----------------------------------------------------------------------*/
+.article{
+margin-top: 40px;
+padding-left: 10px;}
+
+.tópicos{
+font-size: 18px;
+margin-top: 10px; 
+margin-bottom: 10px;}
+
+.h3{
+padding-left: 30px;
+margin-bottom: 10px;}
+
+.sub{
+padding-left: 20px;}
+
+
+/*------FOOTER---------------------------------------------------------------*/
+.footer{
+float: left;
+width: 100%;
+color: white;
+background-color: black;
+padding: 30px 0px 4px 30px;
+margin-bottom: -100px;}
+
+.footer-col{
+width: 100%;
+float: left;
+margin-bottom: 30px;}
+
+.footer-col h1{
+font-size: 18px;
+font-weight: bold;
+margin-bottom: 10px;}
+
+.footer-col .contatos li{
+padding: 5px;}
+
+.footer-col .contatos li:not(:last-of-type){  /*--sem última linha--*/
+border-bottom: 1px solid white;
+width: 28%;}     /*comprimento da linha*/
+
+.footer-col .contatos li .fas, .far{
+font-size: 23px;
+margin-right: 5px;
+color: #6E6E6E;}
 
       </style>
 
@@ -95,11 +139,11 @@ text-align: center;}
  <header class="header-lista">
   <nav class="nav">
    <ul>
-     <li><a href="file:///C:/Users/beapi/Documents/Agora%20vai/Site_inicial.html">Inicial</a></li>
-     <li><a href="file:///C:/Users/beapi/Documents/Agora%20vai/Site_sobrenós.html">Sobre nós</a></li>
-     <li><a href="file:///C:/Users/beapi/Documents/Agora%20vai/Site_projeto.html">Sobre o projeto</a></li>
-     <li><a href="file:///C:/Users/beapi/Documents/Agora%20vai/Site_doacoes.html">Doações</a></li>
-     <li><a href="https://thingspeak.com/">Meu SIS</a></li>  <!--Página inicial do ts-->
+     <li><a href="ProjetoSIS.github.io/index.html">Inicial</a></li>
+     <li><a href="ProjetoSIS.github.io/sobrenos.html">Sobre nós</a></li>
+     <li><a href="ProjetoSIS.github.io/projeto.html">Sobre o projeto</a></li>
+     <li><a href="ProjetoSIS.github.io/doacoes.html">Doações</a></li>
+     <li><a href="https://thingspeak.com/">Meu SIS</a></li>  
    </ul>
   </nav>
  </header>
@@ -110,11 +154,48 @@ text-align: center;}
   </div>
  </section>
 
- <article>
-  <h3 class="h3">Funcionamento</h3>
-  <p> Incluir esquema </p>
-  <p>Fotos fixas</p>
+ <article class="article">
+ <!-- <h3 class="h3">Funcionamento</h3>  -->
+ <!-- <p> Incluir esquema </p>         -->
+<!--  <p>Fotos fixas</p>    -->
+  <h3>Aqui será explicado todos o funcionamento do projeto: </h3>  
+ <h3 class="h3">    e alguns truques para ajudar novos desenvolvedores </h3>
+
+   <p class="sub">Como precisamos de fazer um trabalho sem muito conhecimento sobre os componentes que utilizávamos nos deparamos com alguns mitos ou enganos que dificultaram a realização do projeto. 
+    No intuito de esclarecer algumas questões e fazer da nossa experiência uma vantagem separamos alguns tópicos que mais nos deram problemas:
+    
+    <ul class="tópicos">
+<li><b>1.</b> enc28j60 com Ethercard;</li>
+<li><b>2.</b> Como comunicar seu nRF24L01;</li>
+<li><b>3.</b> Cuidados ao trabalhar com células de carga;</li>
+<li><b>4.</b> Hacks para memória no Arduino;</li>
+<li><b>5.</b> Problemas com bibliotecas prontas;</li>
+   </ul>
+  </p>
  </article>
+
+
+<footer class="footer">
+    <div class="content">
+
+      <div class="footer-col">
+         <p>Projeto realizado por alunas do curso técnico de eletrônica na Escola Técnica Pandiá Calógeras.</p>
+      </div>
+
+      <div class="footer-col">
+       <div class="contatos">
+         <h1>Contato:</h1>
+         <ul>
+           <li><i class="fas fa-at"></i> pcetpc.2018@gmail.com</li>
+           <li><i class="fas fa-phone"></i> Telefone</li>
+           <li><i class="far fa-address-card"></i> Whatever</li>
+         </ul>
+       </div>
+      </div>
+
+    </div>
+</footer>
+
 
  </body>
 
