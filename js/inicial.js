@@ -2,7 +2,7 @@
 
 $(window).scroll(function(){
 
-if ($(this).scrollTop() > 400){
+if ($(this).scrollTop() > 440){
 $('.header-lista').addClass('fixed');}       //fixed
 
 else{
