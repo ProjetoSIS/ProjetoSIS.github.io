@@ -1,7 +1,7 @@
 <html>
  <head>
 
-<title>SIS</title>
+<title>Projeto</title>
 
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,7 +33,7 @@ width: 100%;}
 text-align: center;
 color: white;
 padding: 200px 0;       /*--tamanho da imagem--*/
-background-image: url(https://all3dp.com/app/uploads/2018/04/180404-1.jpg);
+background-image: url(C:/Users/beapi/Pictures/Site/azul6.jpg);
 background-size: cover;
 background-position: center;
 background-attachment: fixed;}
@@ -43,6 +43,17 @@ color: #210B61;
 font-size: 40px;
 font-style: Times;
 font-weight: bold;}
+
+/*------------LOGO----------------------------------------------------*/
+.header-títu .logo{
+max-width: 150px;
+position: relative;
+width: 100%;
+padding-top: 30px;
+z-index: 6;
+float: left;
+margin-left: 55px;
+margin-top: -200px;   /*gambiarra pra posicionar o logo*/}
 
 /*-----------MENU------------------------------------------------*/
 .header-lista{
@@ -94,6 +105,32 @@ margin-bottom: 10px;}
 .sub{
 padding-left: 20px;}
 
+/*-------------SEÇÕES----------------------------------------------------------*/
+.sectionc{
+font-size: 16px;
+padding-left: 20px;
+margin-top: 10px;}
+
+.compt{
+padding-left: 30px;
+margin-top: 16px;
+margin-bottom: 8px;}
+
+.sectionts{
+    box-sizing: border-box;
+    break-inside: avoid;
+    margin: 0 0 2em 0;
+    padding: 80px 550px 0px 1px;
+    display: block;
+    margin-top: 0px;}
+
+.sectionhtml{
+    box-sizing: border-box;
+    break-inside: avoid;
+    margin: 0 0 2em 0;
+    padding: 0px 1px 10px 650px;
+    display: block;
+    margin-top: 0px;}
 
 /*------FOOTER---------------------------------------------------------------*/
 .footer{
@@ -126,6 +163,43 @@ font-size: 23px;
 margin-right: 5px;
 color: #6E6E6E;}
 
+/*-------------SEÇÃO FOTOS----------------------------------------*/
+.fotomit{
+posistion: relative;
+padding-left: 250px;
+padding-right: 250px;
+padding-top: 15px;
+width: 100%;
+height: 400px;}
+
+.legendai{
+font-size: 12px;
+padding-left: 250px;}
+
+.legendaihtml{
+font-size: 12px;
+padding-left: 150px;}
+
+.fotots{
+margin: 0 auto;
+margin-top: 80px;
+margin-left: 10px;
+margin-right: 10px;
+position: relative;
+width: 40%;
+display: block;
+left: 58%;
+top: -300px;
+margin-bottom: -270px;}
+
+.fotohtml{
+position: relative;
+width: 46%;
+right: 0%;
+top: -400px;
+display: block;
+margin-bottom: -270px;}
+
       </style>
 
  </head>
@@ -134,6 +208,11 @@ color: #6E6E6E;}
 
   <header class="header-títu">
     <h1 class="h1">Sobre o projeto</h1>
+
+	<div class="logo">
+           <img src="ProjetoSIS.github.io/Imagens/oie_transparent.png" alt="LOGO" />
+        </div>
+
   </header>
 
  <header class="header-lista">
@@ -155,25 +234,165 @@ color: #6E6E6E;}
  </section>
 
  <article class="article">
- <!-- <h3 class="h3">Funcionamento</h3>  -->
- <!-- <p> Incluir esquema </p>         -->
-<!--  <p>Fotos fixas</p>    -->
   <h3>Aqui será explicado todos o funcionamento do projeto: </h3>  
  <h3 class="h3">    e alguns truques para ajudar novos desenvolvedores </h3>
+  
+  <div class="sub">
+   <p>Como precisávamos realizar o projeto sem muito conhecimento sobre os componentes que utilizávamos, nos deparamos com alguns mitos ou enganos que dificultaram a sua conclusão. </p>
+   <p>No intuito de esclarecer algumas questões e fazer da nossa experiência uma vantagem separamos alguns tópicos que mais nos deram problemas: </p>
+  </div>    
 
-   <p class="sub">Como precisamos de fazer um trabalho sem muito conhecimento sobre os componentes que utilizávamos nos deparamos com alguns mitos ou enganos que dificultaram a realização do projeto. 
-    No intuito de esclarecer algumas questões e fazer da nossa experiência uma vantagem separamos alguns tópicos que mais nos deram problemas:
-    
     <ul class="tópicos">
 <li><b>1.</b> enc28j60 com Ethercard;</li>
 <li><b>2.</b> Como comunicar seu nRF24L01;</li>
 <li><b>3.</b> Cuidados ao trabalhar com células de carga;</li>
-<li><b>4.</b> Hacks para memória no Arduino;</li>
+<li><b>4.</b> Memória curta do Arduino Uno;</li>
 <li><b>5.</b> Problemas com bibliotecas prontas;</li>
    </ul>
   </p>
  </article>
 
+<!----------------COMPONENTES---------------------------------------------------->
+
+<div class="sectionc">
+
+  <h3>Um pouco sobre os componentes que utilizamos:</h3>
+
+ <section class="sectionmit">
+
+  <h2 class="compt">App Inventor 2</h2>
+  
+  <p>O App Inventor é um software web criado pela universidade americana Massachusetts Institute of Technology (MIT), que permite desenvolver aplicativos Android usando um navegador da Web e um telefone ou emulador conectados.
+  </p>
+  <p>Cria-se aplicativos selecionando componentes para o seu software e montando seus blocos que especificam como os componentes devem se comportar. Toda a criação é feita de forma visual, juntando peças com peças como se fosse um quebra-cabeça. 
+  </p>
+
+ </section>      
+
+ <section class="fotomit">
+  <a href="ProjetoSIS.github.io/Imagens/app_blocos.png"><img src="C:\Users\beapi\Documents\Agora vai\Imagens\app_blocos.png" alt="Blocosapp" /></a>
+    <p class="legendai">Uma parte da nossa programação, por Thayana Lucero</p>
+ </section>
+<!--FECHA SECTIONMIT-->
+
+ <section class="sectionts">
+
+  <h2 class="compt">ThingSpeak</h2>
+
+  <p>De acordo com seus criadores o ThingSpeak é um serviço gratuito que permite a coleta e o armazenamento de  informações na nuvem e o desenvolvimento de aplicações da Internet das Coisas (IoT).  </p>
+  <p>Ele providencia apps para você visualizar e analizar suas informações no MATLAB, e então programar uma ação. Possui base para você gerar um tweet baseado nos seus dados, criar uma rede social de dispositivos, controlar à distância motores e outros componentes, além de vários outros recursos.
+  </p>
+  <p> Essas informações podem ser enviadas ao Arduino, Raspberry Pi, BeagleBone Black, entre outros, possuindo uma biblioteca própria para sua comunicação com o Arduino.
+  </p>
+ 
+ </section> 
+
+ <section class="fotots">
+  <a href="ProjetoSIS.github.io/Imagens/thingspeak.png"><img src="C:\Users\beapi\Documents\Agora vai\Imagens\thingspeak.png" alt="thingspeak" /></a>
+  <p class="legendai">Tela inicial</p>
+ </section>     <!--FECHA SECTIONTS-->
+
+ <section class="sectionhtml">
+
+  <h2 class="compt">HTML</h2>
+
+  <p>O HTML é uma linguagem de marcação utilizada para desenvolvimento de sites. Essa linguagem surgiu junto com o HTTP, ambos possibilitaram a internet ser popularizada. O HTML inicialmente foi projetado para interligar instituições de pesquisa próximas, e compartilhar documentos com facilidade. Em 1992 foi liberada a biblioteca de desenvolvimento WWW (World Wide Web), uma rede de alcance mundial, que junto com o HTML proporcionou o uso em escala mundial da Web. 
+ </p>
+  <p>O HTML é uma linguagem de marcação. Essas linguagens são constituídas de códigos que delimitam conteúdos específicos segundo uma sintaxe própria. A linguagem tem código para criar páginas na internet, esses códigos que definem o tipo de letra, tamanho, cor, espaçamento e vários outros aspectos do site. Ele foi a primeira linguagem de nível mundial.
+ </p>
+ <p>A fim de criar e editar códigos em HTML, é necessário qualquer editor de texto comum, como bloco de notas. Para testar os códigos, basta salvar o arquivo em formato HTML e executar, é necessário ter um navegador configurado como padrão para a realização de testes, entretanto não é fundamental internet, pois o arquivo com códigos está na máquina que executa. 
+</p>
+ </section> 
+
+ <section class="fotohtml">
+  <a href="ProjetoSIS.github.io/Imagens/html.png"><img src="C:\Users\beapi\Documents\Agora vai\Imagens\html.png" /></a>
+  <p class="legendaihtml">Parte da programação deste site, por Beatriz Piassi</p>
+ </section><!--FECHA SECTIONHTML-->
+
+ <section class="arduino">
+ </section> <!--FECHA SECTIONARDUINO-->
+
+ <section class="celula">
+  <h2 class="compt">Célula de carga</h2>
+  <p>A célula de carga é um transdutor de força, responsável por medir uma deformação ou flexão de um determinado corpo e transformá-lo em um sinal elétrico. Seu funcionamento baseia-se na variação da resistência ôhmica de um sensor denominado extensômetro. Habitualmente, utiliza-se em células de carga quatro extensômetros ligados entre si conforme a ponte de Wheatstone, e, essa ponte, recebendo uma alimentação de 10 a 12 Vcc e o desbalanceamento da mesma, dada a deformação dos extensômetros, é proporcional à força que a perturba. 
+</p>
+  <p>Os extensômetros são colados em uma peça metálica, intitulada corpo da célula de carga e inteiramente solidários à sua deformação. A força atua, portanto, sobre o corpo da célula de carga e a sua deformação é transmitida ao extensômetros, que medirão sua intensidade.</p>
+ </section> 
+ 
+ <section class="fotocelula">
+  <a href=""><img src="" /></a>
+ </section><!--FECHA SECTIONCELULA-->
+
+
+ <section class="hx">
+  <h2 class="compt">HX-711</h2>
+  <p>O módulo conversor analógico/digital HX711 foi projetado com a finalidade de proporcionar a conversão de alterações de valor de resistência em sensores, como por exemplo, uma balança, em dados digitais.</p>
+  <p>Os sensores de peso existentes em balanças não possuem precisão em seus dados por isso se faz necessário o uso de um módulo desenvolvimento especificamente para uso com sensores de peso.	
+ </p>
+ </section> 
+
+ <section class="fotohx">
+  <a href=""><img src="" /></a>
+ </section><!--FECHA SECTIONHX-->
+
+ <section class="ultra">
+  <h2 class="compt">Ultrassônico - HC-SR04</h2>
+  <p>Um sensor ultrassônico é um dispositivo que utiliza alta frequência de som (acima de 20 KHz, som audível) para medir a distância entre itens específicos. Esses sensores são também conhecidos como transceptores (dispositivo que combina um transmissor e um receptor), e são capazes de operar semelhante ao sonar.</p>
+  <p>O transceptor utiliza um temporizador para determinar com exatidão quanto tempo um pulso ultrassônico leva para retornar à unidade, realizando o cálculo da distância entre ele e o objeto.</p>
+ </section> 
+
+ <section class="fotoultra">
+  <a href=""><img src="" /></a>
+ </section> <!--FECHA SECTIONULTRA-->
+
+ <section class="yl">
+  <h2 class="compt">Sensor de chuva - YL-83</h2>
+  <p>Sensor capaz de informar ao microcontrolador, no caso o Arduino, quando se inicia uma precipitação. A partir dessa informação, pode-se fazer com que a janela feche. Seu funcionamento é muito simples: faz- se a ligação da placa sensora no módulo de leitura através do cabo que o acompanha, e então liga-se o módulo de leitura na entrada digital de sua placa. O sinal vai ficar constante em nível lógico alto (HIGH), enquanto a placa sensora estiver seca. A partir do momento que ela começa a receber pingos, o nível lógico vai para baixo (LOW).
+</p>
+ </section> 
+
+ <section class="fotoyl">
+  <a href=""><img src="" /></a>
+ </section><!--FECHA SECTIONYL-->
+
+ <section class="radio">
+  <h2 class="compt">Radiofrequência - nRF24L01</h2>
+  <p>REFAZER O módulo NRF24L01 Wireless Transceiver fabricado pela Nordic é uma excelente opção de comunicação wi-fi entre dispositivos como Arduino e PIC. Seu alcance pode chegar a 10 metros em ambientes internos e 50 metros em campo aberto. Acompanha uma antena embutida que opera na frequência de 2,4 GHz com velocidade de operação de 2Mbps, modulação GFSK, habilidade de anti-interferência verificação de erros por CRC, comunicação multiponto de 125 canais e controle de fluxo.
+</p>
+ </section> 
+
+ <section class="fotonrf">
+  <a href=""><img src="" /></a>
+ </section><!--FECHA SECTIONRADIO-->
+
+ <section class="ether">
+  <h2 class="compt">Ethernet - ENC28J60 </h2>
+  <p>Esse módulo conecta diretamente com a maioria dos microcontroladores com uma interface SPI cuja transferência ultrapassa 20 MHz. 
+</p>
+  <p>REFAZERO Módulo Ethernet ENC28J60 conecta seu Arduino à Rede Mundial de Computadores por meio do cabo RJ45, bastando seguir as orientações apresentadas na tela do computador que estiver realizando a programação do microcontrolador.</p>
+ </section> 
+
+ <section class="fotoether">
+  <a href=""><img src="" /></a>
+ </section><!--FECHA SECTIONETHER-->
+
+ <section class="eixo">
+  <h2 class="compt">Eixo sem fim</h2>
+  <p>O parafuso de rosca sem fim, também conhecido como eixo sem fim é um tipo de engrenagem da mecânica clássica onde o movimento circular gerado pelo parafuso movimenta uma coroa ou um pinhão teoricamente sem fim, pois ao contrário de mover contraparte, ela gira, mantendo o movimento circular. Como parte de um sistema de engrenagens, essa técnica pode reduzir as rotações, permitindo maior torque.
+</p>
+ </section> 
+
+ <section class="fotoeixo">
+  <a href=""><img src="" /></a>
+ </section>  <!--FECHA SECTIONEIXO-->
+
+ <section class="mutuca">
+ </section> 
+ <section class="fotomutuca">
+  <a href=""><img src="" /></a>
+ </section><!--FECHA SECTIONMUTUCA-->
+
+</div> <!--FECHA SECTIONC-->
 
 <footer class="footer">
     <div class="content">
@@ -189,6 +408,7 @@ color: #6E6E6E;}
            <li><i class="fas fa-at"></i> pcetpc.2018@gmail.com</li>
            <li><i class="fas fa-phone"></i> Telefone</li>
            <li><i class="far fa-address-card"></i> Whatever</li>
+           <p> Texto feito por Ana Luisa Abreu, Beatriz Piassi e Helena da Rosa.
          </ul>
        </div>
       </div>
