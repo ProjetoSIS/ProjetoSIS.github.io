@@ -114,13 +114,18 @@ margin: 0;}
 
 .container{
 margin: 0 auto;
-margin-top: 20px;
+margin-top: 80px;
+margin-bottom: 10px;
+margin-left: 10px;
+margin-right: 10px;
 position: relative;
-width: 60%;         /*--tamanho do quadro--*/
-height: 0;
-padding-bottom: 40%;
+display: block;
+left: 64%;
+width: 32%;         /*--tamanho do quadro--*/
+height: 50%;
+padding-bottom: 10%;
 background: black;
-border: solid 4px blue;}
+border: solid 4px black;}
 
 .slide_img{
 position: absolute;
@@ -141,7 +146,7 @@ position: absolute;
 top: 0;
 z-index: 99;
 cursor: pointer;
-margin-top: 250px;}
+margin-top: 150px;}
 
 .fas{
 padding: 5px 5px 5px 5px;
@@ -149,7 +154,7 @@ color: black;
 font-size: 40px;}
 
 .Próxima{
-right: 0;}
+right: 15px;}
 
 .Anterior{
 left: 0;}
@@ -184,15 +189,7 @@ z-index: 9;}
 #i2:checked ~ .nav #dot2,
 #i3:checked ~ .nav #dot3{
 background: white;}
-/*-----------------------------------------------------------------------------------*/
 
-/*----Texto----------------------------------------------------------------------------*/
-.texto1{
-font-size: 22px;
-color: black;
-text-align: center;
-margin-top: 15px;
-margin-bottom: 15px;}
 
 /*------FOOTER---------------------------------------------------------------*/
 .footer{
@@ -225,7 +222,39 @@ font-size: 23px;
 margin-right: 5px;
 color: #6E6E6E;}
 
+/*------------------TEXTO1-----------------------------------------*/
+.texto, .textoi{
+font-size: 18px;
+text-align: left;
+padding-left: 20px;
+margin-top: 10px;}
 
+.ppt{
+margin-top: 5px;}
+
+.pptb{
+margin-top: 5px;
+margin-bottom: 5px;}
+
+.espaçot{
+padding-left: 30px;
+margin-top: 16px;}
+
+.texto{
+display: block;
+/*--position: absolute; --*/
+margin-block-start: 20px;
+margin-block-end: 60px;
+margin-inline-start: 0px;
+margin-inline-end: 0px;  }
+
+.section1{
+    box-sizing: border-box;
+    break-inside: avoid;
+    margin: 0 0 2em 0;
+    padding: 0px 550px 0px 1px;
+    display: block;
+    margin-top: -400px;}
 
           </style>
    </head>
@@ -241,7 +270,7 @@ color: #6E6E6E;}
       </div>      
 	
 	<div class="logo">
-           <a href="file:///C:/Users/beapi/Documents/Agora%20vai/Site_inicial.html"><img src="C:/Users/beapi/Pictures/Site/Logo_SIS.png" alt="LOGO" /></a>
+           <img src="ProjetoSIS.github.io/Imagens/SIS LOGO_transparent.png " alt="LOGO" />
 	</div>
   
 
@@ -260,20 +289,14 @@ color: #6E6E6E;}
  </header>
 
 
-<!----Imagens no inicial---->
-   <section class="section">
 
-   <div class="content"> 
+             <div class="textoi">
+	 	<h3>O projeto SIS foi criado no intuito de facilitar a sua vida por meio da automatização de processos corriqueiros. </h3>
+         	<h3>Utilizamos da domótica para garantir uma maior segurança e conforto para você e sua família!</h3>
+	 	<p>Desenvolvemos este site como uma plataforma de informação e comunicação entre vocês e nós, além de podermos ajudar novos desenvolvedores oferecendo nossa experiência adquirida no desdobramento do projeto.</p>
+	     </div>
 
-      <header class="título2">
-    <!--   <h1> aaaaaaa </h1>          -->
-    <!--   <p> Subtítulo tb </p> -->
-      </header>
-
-                 <div class="fotinhas">
-
-
-<div class="container">
+<div class="container">  
 
   <input type="radio" name="images" id="i1" checked/>
   <input type="radio" name="images" id="i2" />
@@ -285,7 +308,7 @@ color: #6E6E6E;}
    <label for="i3" class="Anterior"><i class="fas fa-chevron-left"></i></label>
    <label for="i2" class="Próxima"><i class="fas fa-chevron-right"></i></label>
 
- </div>
+ </div> <!--fecha slide_img one-->
 
 <div class="slide_img" id="two">
   <img src="https://img.improuse.com/1/v/t1.0-9/31793567_1522620141194542_7332805829193629696_n.jpg?_nc_cat=0&oh=a716a67cdfe02967740b73566af1eede&oe=5BF57D32" /> 
@@ -293,33 +316,42 @@ color: #6E6E6E;}
    <label for="i1" class="Anterior"><i class="fas fa-chevron-left"></i></label>
    <label for="i3" class="Próxima"><i class="fas fa-chevron-right"></i></label>
 
- </div>
+ </div> <!--fecha slide_img two-->
 
 <div class="slide_img" id="three">
   <img src="https://aaronguide.com/wp-content/uploads/2018/07/janela-grande-para-quarto-awesome-janelas-itapetininga-of-janela-grande-para-quarto.jpg" /> 
    <label for="i2" class="Anterior"><i class="fas fa-chevron-left"></i></label>
    <label for="i1" class="Próxima"><i class="fas fa-chevron-right"></i></label>
 
- </div>
+ </div>  <!--fecha slide_img three-->
 
   <div class="nav">
    <label class="dots" id="dot1" for="i1"></label>
    <label class="dots" id="dot2" for="i2"></label>
    <label class="dots" id="dot3" for="i3"></label>
-  </div>
+  </div>  <!--fecha dots-->
 
-</div>                    
+</div>    <!--fecha container-->                 
 
-	</div>
 
-    </div>
- 
-        <div class="texto1">
-   <!--      <p>Texto qualquer lá-lá-lá</p>   -->
+     <section class="section1">
+
+       <div class="texto">
+
+           <h4 class="espaçot">O que é automação?</h4>
+		<p class="ppt">Automação é um sistema que emprega processos automáticos que comandam e controlam os mecanismos para seu próprio funcionamento. É um sistema que faz uso de técnicas computadorizadas ou mecânicas, com o objetivo de dinamizar e otimizar todos os processos produtivos dos mais diversos setores. 
+		</p>
+		<p>A ideia de automação está diretamente ligada à ideia das máquinas, que agilizam as tarefas quase sempre sem a interferência humana.
+		</p>
+   		<p> Nessa nova conjuntura do mundo tecnológico, a tendência social é de automatização do âmbito comum, deixando de ser algo voltado somente à indústria. Essas transformações têm como função melhorar a qualidade de vida e a segurança dos cidadãos, funções em que o projeto SIS encaixa-se perfeitamente. 
+		</p>   
+
+           <h4 class="espaçot">O conceito de domótica:</h4>
+		<p class="pptb">Domótica é uma tecnologia recente e é responsável pela gestão de todos os recursos habitacionais. Esse termo nasceu da fusão da palavra “Domus”, que significa casa, com a palavra “Robótica”. Esse conceito de automação vem no seguimento de encontrar soluções que propiciem resposta à necessidade do homem de querer realizar o mínimo esforço nas atividades diárias. Assim, a Domótica, para além de proporcionar conforto e melhoria de vida aos seus utilizadores, introduz ainda novos conceitos, tais como a comunicação e segurança.
+</p>
+
         </div>
-
-
-   </section>
+      </section>     <!--fecha section1--->
 
    <footer class="footer">
     <div class="content">
